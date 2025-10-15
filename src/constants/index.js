@@ -246,7 +246,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: impersonally,
+      image: Impersonally,
       source_code_link: "https://github.com/BhavikWadhwa/Product_react",
     },
   ];

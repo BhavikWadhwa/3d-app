@@ -31,9 +31,9 @@ import designing from './company/designing.png'
 import joyofgiving from './company/joyofgiving.jpg';
 import progistech from './company/progistech.png';
 
-import impersonally from './Nike.png';
-import Nike from './Impersonally.png';
-import Galventa from './Galventa.png'
+import Nike from './Nike.png';
+import Galventa from './Galventa.png';
+import Impersonally from './Impersonally.png';
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";

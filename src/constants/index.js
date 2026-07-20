@@ -4,24 +4,17 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
-    mongodb,
     git,
     figma,
     joyofgiving,
     timesinternet,
     designing,
     progistech,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
     Galventa,
     Nike,
     impersonally,
@@ -165,7 +158,7 @@ import {
       name: "Manish Taneja",
       designation: "CFO",
       company: "Designing Solutions",
-      image: "https://thejoyofgiving.in/wp-content/uploads/2023/08/davinder-295x3001wwl.jpg",
+      image: designing,
     },
     {
       testimonial:
@@ -173,7 +166,7 @@ import {
       name: "Davinder Singh",
       designation: "CEO",
       company: "Pro GIS Tech",
-      image: "https://cdn-iebij.nitrocdn.com/RmrxpXJIDoTLxhmUGLiTcPCGrtULrOuz/assets/images/optimized/rev-d2d5072/designingsolutions.co.in/wp-content/uploads/2023/02/davinder-295x3001ww.png",
+      image: progistech,
     },
     {
       testimonial:
@@ -181,7 +174,7 @@ import {
       name: "Atul Ahuja",
       designation: "General Manager",
       company: "Times Internet, Delhi",
-      image: "https://media.licdn.com/dms/image/v2/C5103AQH6F2WtSj8Ejg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1518158104243?e=1732147200&v=beta&t=UdgqXfL0AZVEegrjAFc-bInlfQukZY57vhk_ohLPR1U",
+      image: timesinternet,
     },
   ];
   
@@ -225,13 +218,13 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: Nike,
+      image: impersonally,
       source_code_link: "https://impersonally.io",
     },
     {
       name: "Nike Product page",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A responsive Nike product landing page with an interactive, modern interface for showcasing footwear.",
       tags: [
         {
           name: "react.js",
@@ -246,7 +239,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: Impersonally,
+      image: Nike,
       source_code_link: "https://github.com/BhavikWadhwa/Product_react",
     },
   ];

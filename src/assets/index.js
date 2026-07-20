@@ -32,8 +32,8 @@ import joyofgiving from './company/joyofgiving.jpg';
 import progistech from './company/progistech.png';
 
 import Nike from './Nike.png';
+import impersonally from './Impersonally.png';
 import Galventa from './Galventa.png';
-import Impersonally from './Impersonally.png';
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";

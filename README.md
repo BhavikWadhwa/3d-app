@@ -1,84 +1,86 @@
-# Bhavik Wadhwa — 3D Developer Portfolio
+# Bhavik Wadhwa - Interactive 3D Portfolio
 
-An interactive 3D portfolio that presents my experience, technical skills, featured projects, testimonials, and contact information in a modern, responsive format.
+An interactive portfolio that presents my resume, technical experience, projects, skills, testimonials, and contact information through responsive design, browser-based 3D graphics, and motion.
 
-[View the live portfolio](https://3d-app-iota.vercel.app) · [View the source code](https://github.com/BhavikWadhwa/3d-app)
+[View the live portfolio](https://3d-app-iota.vercel.app) | [View the source code](https://github.com/BhavikWadhwa/3d-app)
 
-## About Me
+## Professional Profile
 
-I am a web developer experienced in creating responsive websites and web applications with React, WordPress, and Shopify. I am currently pursuing a Bachelor's degree in Computer Information Systems at the University of the Fraser Valley.
+I am a Bachelor of Computer Information Systems graduate with hands-on experience across software development, technical operations, workflow automation, business systems, customer service, data analysis, technical instruction, and operations. I enjoy translating business and operational needs into practical technology solutions.
 
-This portfolio works as an interactive version of my résumé and highlights my ability to combine frontend development, 3D graphics, animation, responsive design, and user-focused interfaces.
+My target areas include technical operations, business systems, operations analysis, product operations, software development, and technology consulting.
 
-## What This Portfolio Showcases
+## What the Portfolio Showcases
 
-- An animated 3D hero scene rendered directly in the browser
-- A professional summary and overview of my development services
-- An interactive technology section with 3D skill icons
-- A chronological work-experience timeline
-- Selected projects with technologies and external links
-- Professional testimonials
-- A responsive contact form with EmailJS support and an email-client fallback
+- A responsive 3D hero scene rendered directly in the browser
+- A resume-based professional overview and experience summary cards
+- A chronological work history with three focused achievements per role
+- Eighteen interactive technology balls based on my resume and projects
+- Full-stack, automation, AI, analytics, machine-learning, and frontend projects
+- Professional testimonials and a resilient contact form
 - Responsive navigation and layouts for desktop and mobile devices
 
 ## Professional Experience
 
 | Role | Organization | Period |
 | --- | --- | --- |
-| React.js Developer | Designing Solutions | May 2024 – August 2024 |
-| Volunteer Web Developer | The Joy of Giving | January 2024 – August 2024 |
-| Accounting Intern | Times Internet | December 2023 – January 2024 |
-| Web Developer | Pro GIS Tech | May 2023 – September 2023 |
+| Commis Chef (Line Cook) | Alimentaria Mexicana | June 2026 - Present |
+| Event Operations Team Member | Nuba - FIFA Fan Festival | May 2026 - July 2026 |
+| Academic Tutor & Lab Instructor | University of the Fraser Valley | September 2025 - April 2026 |
+| Soccer Statistician | UFV Cascades Athletics | August 2025 - October 2025 |
+| PC Financial Representative | Kognitive Marketing | April 2025 - December 2025 |
+| Software Developer Intern | Designing Solutions | April 2024 - September 2024 |
 
-## Featured Projects
+## Featured Technical Projects
 
-### Galventa
+### AutoFlow - AI Workflow Automation Platform
 
-A clean and professional website for a pharmaceutical company specializing in nutraceutical and over-the-counter products.
+A full-stack platform for visually building, validating, executing, and monitoring automated business workflows. It includes modular workflow nodes, validation, persistent execution history, runtime logs, Docker-based development, database migrations, and deployment automation.
 
-**Technologies:** WordPress, Figma, Elementor<br>
-**Website:** [galventa.com](https://www.galventa.com)
+**Technologies:** Python, FastAPI, PostgreSQL, SQLAlchemy, Alembic, JWT, REST APIs, Docker, GitHub Actions
 
-### Impersonally
+### NorthBrief News Platform
 
-A personality-testing platform with a responsive interface, API integrations, and animated interactions.
+A personalized Canadian news platform that ingests content from more than 28 RSS and official sources, handles deduplication and categorization, and generates concise AI-supported news summaries with deterministic fallbacks.
 
-**Technologies:** WordPress, API integration, animations<br>
-**Website:** [impersonally.io](https://impersonally.io)
+**Technologies:** Next.js, React, TypeScript, FastAPI, PostgreSQL, OpenAI, Docker, Render
 
-### Nike Product Page
+### Football Match Prediction & Lineup Analytics
 
-A responsive Nike product landing page with an interactive interface for showcasing footwear.
+An end-to-end sports analytics platform that processes data from more than 500 matches, engineers predictive features, trains Random Forest models, and presents match probabilities, feature importance, and lineup simulations in an interactive dashboard.
 
-**Technologies:** React, Tailwind CSS, React Tilt<br>
-**Source:** [Product_react](https://github.com/BhavikWadhwa/Product_react)
+**Technologies:** Python, Pandas, Scikit-learn, Streamlit, Plotly, BeautifulSoup
+
+### Interactive 3D Portfolio
+
+This responsive portfolio uses reusable React components, browser-based 3D scenes, animated transitions, and a contact form with EmailJS and email-client fallback support.
+
+**Technologies:** React, Three.js, React Three Fiber, Framer Motion, Tailwind CSS, Vite
 
 ## Technology Stack
 
-### Core Frontend
+### Programming and Frontend
 
-- **React 18** for component-based user interfaces
-- **JavaScript (ES modules)** for application logic
-- **Vite 5** for local development and production builds
-- **React Router** for client-side navigation
+- Python, Java, C++, JavaScript, TypeScript, HTML5, and CSS3
+- React, Next.js, Tailwind CSS, Bootstrap, and Node.js
+- Responsive design, CSS Flexbox, CSS Grid, and DOM manipulation
 
-### 3D and Animation
+### Backend, APIs, and Data
 
-- **Three.js** for WebGL-powered 3D graphics
-- **React Three Fiber** for rendering Three.js scenes with React
-- **React Three Drei** for reusable 3D helpers, controls, loaders, and decals
-- **Maath** for generating the animated star field
-- **Framer Motion** for scroll-based transitions and interface animation
-- **React Tilt** for interactive card effects
-- **React Vertical Timeline** for the work-experience timeline
+- FastAPI, REST APIs, JWT authentication, SQLAlchemy, and Alembic
+- PostgreSQL, SQLite, SQL, Pandas, and Scikit-learn
+- Workflow automation, validation engines, data pipelines, and integration testing
 
-### Styling and Tooling
+### 3D, Visualization, and Design
 
-- **Tailwind CSS** for responsive utility-first styling
-- **PostCSS** and **Autoprefixer** for CSS processing
-- **ESLint** with React and Hooks rules for code quality
-- **EmailJS** for contact-form delivery when credentials are configured
-- **Vercel** for production hosting and HTTPS deployment
+- Three.js, React Three Fiber, React Three Drei, Maath, and Framer Motion
+- Streamlit, Plotly, Tableau, Figma, and React Tilt
+
+### Tools and Platforms
+
+- Git, GitHub, Docker, Postman, Visual Studio Code, Windows, and Linux
+- WordPress, Brilliant Directories, Vercel, Render, and GitHub Actions
+- Microsoft Excel, PivotTables, PivotCharts, XLOOKUP, VLOOKUP, SUMIFS, and data validation
 
 ## Running Locally
 
@@ -109,7 +111,7 @@ Open the local URL printed by Vite, usually `http://localhost:5173`.
 
 ## Contact Form Configuration
 
-The contact form works without additional setup by opening the visitor's default email client. To send messages directly through EmailJS, create a `.env.local` file:
+Without additional configuration, the contact form opens the visitor's default email client. To send messages directly through EmailJS, create a `.env.local` file:
 
 ```env
 VITE_APP_EMAILJS_SERVICE_ID=your_service_id
@@ -117,17 +119,17 @@ VITE_APP_EMAILJS_TEMPLATE_ID=your_template_id
 VITE_APP_EMAILJS_PUBLIC_KEY=your_public_key
 ```
 
-Restart the development server after changing environment variables. Add the same variables to the Vercel project's environment settings for production use. Do not commit `.env.local` or private credentials.
+Add the same variables to the Vercel project environment settings for production use. Never commit `.env.local` or private credentials.
 
 ## Deployment
 
-The portfolio is deployed on Vercel at [3d-app-iota.vercel.app](https://3d-app-iota.vercel.app). Vercel detects the Vite configuration, runs `npm run build`, and publishes the generated `dist` directory.
+The portfolio is deployed on Vercel at [3d-app-iota.vercel.app](https://3d-app-iota.vercel.app). Vercel runs `npm run build` and publishes the generated `dist` directory.
 
 ## Acknowledgements
 
-The original project structure was inspired by the [JavaScript Mastery 3D portfolio tutorial](https://youtu.be/0fYi8SGA20k). The portfolio content, professional experience, project information, styling customizations, fixes, and deployment configuration have been adapted for my personal résumé.
+The original project structure was inspired by the [JavaScript Mastery 3D portfolio tutorial](https://youtu.be/0fYi8SGA20k). The content, experience, projects, styling, fixes, and deployment configuration were adapted for my personal portfolio.
 
 ## Contact
 
 **Bhavik Wadhwa**<br>
-Email: [bhavikwadhwa131@gmail.com](mailto:bhavikwadhwa131@gmail.com)
+Email: [bhavikwadhwa1312@gmail.com](mailto:bhavikwadhwa1312@gmail.com)

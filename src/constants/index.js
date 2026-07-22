@@ -1,247 +1,230 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
-    javascript,
-    html,
-    css,
-    reactjs,
-    tailwind,
-    nodejs,
-    git,
-    figma,
-    joyofgiving,
-    timesinternet,
-    designing,
-    progistech,
-    Galventa,
-    Nike,
-    impersonally,
+  alimentaria,
+  autoflow,
+  css,
+  designing,
+  docker,
+  figma,
+  footballAnalytics,
+  Galventa,
+  git,
+  html,
+  javascript,
+  nuba,
+  northbrief,
+  nodejs,
+  pcFinancial,
+  progistech,
+  reactjs,
+  tailwind,
+  threejs,
+  timesinternet,
+  typescript,
+  ufv,
+  ufvCascades,
+} from "../assets";
 
-  } from "../assets";
-  
-  export const navLinks = [
-    {
-      id: "about",
-      title: "About",
-    },
-    {
-      id: "work",
-      title: "Work",
-    },
-    {
-      id: "contact",
-      title: "Contact",
-    },
-  ];
-  
-  const services = [
-    {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
-      title: "React Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
-  ];
-  
-  const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
+export const navLinks = [
+  { id: "about", title: "About" },
+  { id: "work", title: "Work" },
+  { id: "contact", title: "Contact" },
+];
 
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
- 
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
+const technologies = [
+  { name: "HTML5", icon: html },
+  { name: "CSS3", icon: css },
+  { name: "JavaScript", icon: javascript },
+  { name: "TypeScript", icon: typescript },
+  { name: "React", icon: reactjs },
+  { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" },
+  { name: "Tailwind CSS", icon: tailwind },
+  { name: "Node.js", icon: nodejs },
+  { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+  { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" },
+  { name: "C++", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" },
+  { name: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" },
+  { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
+  { name: "Docker", icon: docker },
+  { name: "Git", icon: git },
+  { name: "Postman", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" },
+  { name: "Three.js", icon: threejs },
+  { name: "Figma", icon: figma },
+];
 
-  ];
-  
-  const experiences = [
-    {
-      title: "React.js Developer",
-      company_name: "Designing Solutions",
-      icon: designing,
-      iconBg: "#E6DEDD",
-      date: "May 2024 - August 2024",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+const experiences = [
+  {
+    title: "Web Developer",
+    company_name: "Pro GIS Tech",
+    icon: progistech,
+    iconBg: "#E6DEDD",
+    date: "May 2023 - September 2023",
+    points: [
+      "Developed and maintained responsive web applications using React.js and related frontend technologies.",
+      "Collaborated with designers and stakeholders to translate requirements into practical, user-friendly features.",
+      "Improved cross-browser compatibility and participated in testing and code review workflows.",
+    ],
+  },
+  {
+    title: "Software Developer Intern",
+    company_name: "Designing Solutions",
+    icon: designing,
+    iconBg: "#E6DEDD",
+    date: "April 2024 - September 2024",
+    points: [
+      "Contributed to six client websites and applications across WordPress, Brilliant Directories, React.js, PHP, and Node.js.",
+      "Investigated production issues, identified root causes, and delivered features or fixes without disrupting existing functionality.",
+      "Participated in client meetings, documented requirements and changes, and balanced priorities across multiple active engagements.",
+    ],
+  },
+  {
+    title: "PC Financial Representative",
+    company_name: "Kognitive Marketing",
+    icon: pcFinancial,
+    iconBg: "#E6DEDD",
+    date: "April 2025 - December 2025",
+    points: [
+      "Engaged with 100+ customers weekly to understand financial needs and explain suitable banking products clearly.",
+      "Guided applicants through identification and document checks while ensuring submissions met compliance and quality standards.",
+      "Handled confidential information professionally and adapted communication for customers from diverse backgrounds.",
+    ],
+  },
+  {
+    title: "Soccer Statistician",
+    company_name: "UFV Cascades Athletics",
+    icon: ufvCascades,
+    iconBg: "#E6DEDD",
+    date: "August 2025 - October 2025",
+    points: [
+      "Performed live match coding in PrestoSports for shots, expected goals, possession, fouls, substitutions, cards, and other events.",
+      "Entered and updated official statistics published to the Canada West website with accurate player, timestamp, and event information.",
+      "Worked with athletics staff to resolve discrepancies and complete match reporting within strict post-game deadlines.",
+    ],
+  },
+  {
+    title: "Academic Tutor & Lab Instructor",
+    company_name: "University of the Fraser Valley",
+    icon: ufv,
+    iconBg: "#E6DEDD",
+    date: "September 2025 - April 2026",
+    points: [
+      "Provided one-on-one and small-group support to 15+ students by adapting explanations to different technical backgrounds and learning styles.",
+      "Taught advanced Excel workflows including PivotTables, XLOOKUP, SUMIFS, data validation, conditional formatting, and business charts.",
+      "Diagnosed formula, reference, data-quality, and workflow errors while teaching students how to identify root causes independently.",
+    ],
+  },
+  {
+    title: "Event Operations Team Member",
+    company_name: "Nuba - FIFA Fan Festival",
+    icon: nuba,
+    iconBg: "#E6DEDD",
+    date: "May 2026 - July 2026",
+    points: [
+      "Managed high-volume cash and card transactions while maintaining accuracy, efficiency, and strong customer service.",
+      "Served as a primary guest contact by processing orders, resolving inquiries, and supporting a smooth visitor experience.",
+      "Collaborated with kitchen and front-of-house teams to maintain order flow, minimize wait times, and support daily operations.",
+    ],
+  },
+  {
+    title: "Commis Chef (Line Cook)",
+    company_name: "Alimentaria Mexicana",
+    icon: alimentaria,
+    iconBg: "#E6DEDD",
+    date: "June 2026 - Present",
+    points: [
+      "Prepare menu items to standardized recipes while maintaining quality, consistency, and food-safety requirements during busy services.",
+      "Coordinate with chefs and kitchen staff to prioritize orders and keep service moving efficiently during peak periods.",
+      "Manage preparation, workstation organization, and inventory replenishment to reduce disruptions and maintain operational readiness.",
+    ],
+  },
+];
 
-    {
-      title: "Web Developer, Volunteer",
-      company_name: "The Joy of Giving",
-      icon: joyofgiving,
-      iconBg: "#E6DEDD",
-      date: "Jan 2024 - august 2024",
-      points: [
-        "Developed the official website for The Joy of Giving NGO (https://thejoyofgiving.in ), enhancing its online presence and outreach.",
-        "actively participated in organizing and conducting various camps, contributing to the NGO's mission of supporting underprivileged communities.",
-      ],
-    },
+const testimonials = [
+  {
+    testimonial: "I thought it was impossible to make a website as beautiful as our product, but Bhavik proved me wrong.",
+    name: "Manish Taneja",
+    designation: "CFO",
+    company: "Designing Solutions",
+    image: designing,
+  },
+  {
+    testimonial: "I've never met a web developer who truly cares about their clients' success like Bhavik does.",
+    name: "Davinder Singh",
+    designation: "CEO",
+    company: "Pro GIS Tech",
+    image: progistech,
+  },
+  {
+    testimonial: "He was quick to grasp complex accounting system models and proved to be a fast learner.",
+    name: "Atul Ahuja",
+    designation: "General Manager",
+    company: "Times Internet, Delhi",
+    image: timesinternet,
+  },
+];
 
+const projects = [
+  {
+    name: "AutoFlow",
+    category: "AI Workflow Automation",
+    visualLabel: "Build. Validate. Execute.",
+    gradient: "from-violet-600 via-indigo-700 to-slate-950",
+    image: autoflow,
+    description: "A full-stack workflow automation platform for visually building, validating, executing, and monitoring business workflows with persistent logs and execution history.",
+    tags: [
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "FastAPI", color: "green-text-gradient" },
+      { name: "PostgreSQL", color: "pink-text-gradient" },
+      { name: "Docker", color: "blue-text-gradient" },
+    ],
+    live_link: "https://autoflow-web.onrender.com/",
+    source_code_link: "https://github.com/BhavikWadhwa/autoflow",
+  },
+  {
+    name: "NorthBrief",
+    category: "Personalized News Platform",
+    visualLabel: "Canadian news, intelligently briefed.",
+    gradient: "from-cyan-600 via-blue-800 to-slate-950",
+    image: northbrief,
+    description: "A full-stack Canadian news platform that ingests content from 28+ sources, personalizes feeds, and generates concise AI-supported summaries with reliable fallbacks.",
+    tags: [
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "TypeScript", color: "green-text-gradient" },
+      { name: "FastAPI", color: "pink-text-gradient" },
+      { name: "OpenAI", color: "blue-text-gradient" },
+    ],
+    live_link: "https://northbrief-web-bhavik.onrender.com/",
+    source_code_link: "https://github.com/BhavikWadhwa/NorthBrief",
+  },
+  {
+    name: "Football Match Prediction",
+    category: "Machine Learning & Analytics",
+    visualLabel: "500+ matches. Predictive lineup insights.",
+    gradient: "from-emerald-600 via-teal-800 to-slate-950",
+    image: footballAnalytics,
+    description: "An end-to-end sports analytics platform that scrapes match data, engineers predictive features, trains Random Forest models, and supports interactive lineup simulations.",
+    tags: [
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "Scikit-learn", color: "green-text-gradient" },
+      { name: "Streamlit", color: "pink-text-gradient" },
+      { name: "Plotly", color: "blue-text-gradient" },
+    ],
+    live_link: "https://football-analytics-ml-v2.streamlit.app/",
+    source_code_link: "https://github.com/BhavikWadhwa/Football-analytics-ml-V2",
+  },
+  {
+    name: "Galventa",
+    category: "Pharmaceutical Web Design",
+    visualLabel: "A professional digital presence for healthcare.",
+    gradient: "from-fuchsia-600 via-purple-800 to-slate-950",
+    image: Galventa,
+    description: "A clean, professional website created for a pharmaceutical company specializing in nutraceutical and over-the-counter healthcare products.",
+    tags: [
+      { name: "WordPress", color: "blue-text-gradient" },
+      { name: "Figma", color: "green-text-gradient" },
+      { name: "Elementor", color: "pink-text-gradient" },
+    ],
+    live_link: "https://www.galventa.com",
+  },
+];
 
-    {
-      title: "Accounting Intern",
-      company_name: "Times Internet",
-      icon: timesinternet,
-      iconBg: "#E6DEDD",
-      date: "Dec 2023 - Jan 2024",
-      points: [
-        "Got an introduction to SAP modules like Material Management (MM).",
-        "Moreover, got an introduction to modules such as FICO, HR, and CO",
-        "Understood flow of information from accounting and finance perspective through the modules.",
-       
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Pro GIS Tech",
-      icon: progistech,
-      iconBg: "#E6DEDD",
-      date: "May 2023 - Sep 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-
-  ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Bhavik proved me wrong.",
-      name: "Manish Taneja",
-      designation: "CFO",
-      company: "Designing Solutions",
-      image: designing,
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Bhavik does.",
-      name: "Davinder Singh",
-      designation: "CEO",
-      company: "Pro GIS Tech",
-      image: progistech,
-    },
-    {
-      testimonial:
-        "He was Quick enough to grasp the Accounting SCP models, truly a fast learner",
-      name: "Atul Ahuja",
-      designation: "General Manager",
-      company: "Times Internet, Delhi",
-      image: timesinternet,
-    },
-  ];
-  
-  const projects = [
-    {
-      name: "Galventa",
-      description:
-        "Developed a clean and professional website for a pharmaceutical company specializing in nutraceuticals and OTC products.",
-      tags: [
-        {
-          name: "WordPress",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Figma",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Elemontor",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: Galventa,
-      source_code_link: "https://www.galventa.com",
-    },
-    {
-      name: "Impersonally",
-      description:
-        "Created an innovative platform for personality testing, ensuring a seamless user interface and a dynamic, responsive design.",
-      tags: [
-        {
-          name: "WordPress",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Api Integration",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Animations",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: impersonally,
-      source_code_link: "https://impersonally.io",
-    },
-    {
-      name: "Nike Product page",
-      description:
-        "A responsive Nike product landing page with an interactive, modern interface for showcasing footwear.",
-      tags: [
-        {
-          name: "react.js",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Tailwind",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Tilt",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: Nike,
-      source_code_link: "https://github.com/BhavikWadhwa/Product_react",
-    },
-  ];
-  
-  export { services, technologies, experiences, testimonials, projects };
+export { experiences, projects, technologies, testimonials };

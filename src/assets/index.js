@@ -30,10 +30,18 @@ import timesinternet from "./company/timesinternet.png";
 import designing from './company/designing.png'
 import joyofgiving from './company/joyofgiving.jpg';
 import progistech from './company/progistech.png';
+import alimentaria from './company/alimentaria.png';
+import nuba from './company/nuba.png';
+import ufv from './company/ufv.png';
+import ufvCascades from './company/ufv-cascades.png';
+import pcFinancial from './company/pc-financial.png';
 
 import Nike from './Nike.png';
 import impersonally from './Impersonally.png';
 import Galventa from './Galventa.png';
+import autoflow from './projects/autoflow.png';
+import northbrief from './projects/northbrief.png';
+import footballAnalytics from './projects/football-analytics.png';
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -44,9 +52,17 @@ export {
   designing,
   joyofgiving,
   progistech,
+  alimentaria,
+  nuba,
+  ufv,
+  ufvCascades,
+  pcFinancial,
   impersonally,
   Nike,
   Galventa,
+  autoflow,
+  northbrief,
+  footballAnalytics,
   logo,
   backend,
   creator,

@@ -1,21 +1,28 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+const contactEndpoint =
+  import.meta.env.VITE_CONTACT_FORM_ENDPOINT ||
+  "https://formsubmit.co/ajax/bhavikwadhwa1312@gmail.com";
+
 const Contact = () => {
-  const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
+    website: "",
   });
 
   const [loading, setLoading] = useState(false);
+  const [submissionStatus, setSubmissionStatus] = useState({
+    type: "",
+    message: "",
+  });
 
   const handleChange = (e) => {
     const { target } = e;
@@ -27,53 +34,58 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const serviceId = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
-    const templateId = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
-    const publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
-
-    if (!serviceId || !templateId || !publicKey) {
-      const subject = encodeURIComponent(`Portfolio message from ${form.name}`);
-      const body = encodeURIComponent(`${form.message}\n\nFrom: ${form.name} (${form.email})`);
-      window.location.href = `mailto:bhavikwadhwa131@gmail.com?subject=${subject}&body=${body}`;
+    if (form.website) {
       return;
     }
 
     setLoading(true);
+    setSubmissionStatus({ type: "", message: "" });
 
-    emailjs
-      .send(
-        serviceId,
-        templateId,
-        {
-          from_name: form.name,
-          to_name: "",
-          from_email: form.email,
-          to_email: "bhavikwadhwa131@gmail.com",
+    try {
+      const response = await fetch(contactEndpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
           message: form.message,
-        },
-        publicKey
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          _replyto: form.email,
+          _subject: `New portfolio message from ${form.name}`,
+          _template: "table",
+          _url: "https://3d-app-iota.vercel.app/#contact",
+        }),
+      });
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
+      if (!response.ok) {
+        throw new Error("Message delivery failed");
+      }
 
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+        website: "",
+      });
+      setSubmissionStatus({
+        type: "success",
+        message: "Thank you! Your message was sent successfully.",
+      });
+    } catch (error) {
+      console.error(error);
+      setSubmissionStatus({
+        type: "error",
+        message:
+          "Your message could not be sent. Please try again or email me directly.",
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -88,10 +100,19 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
-          ref={formRef}
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'
         >
+          <input
+            type='text'
+            name='website'
+            value={form.website}
+            onChange={handleChange}
+            tabIndex={-1}
+            autoComplete='off'
+            aria-hidden='true'
+            className='hidden'
+          />
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
@@ -112,7 +133,7 @@ const Contact = () => {
               required
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="What's your email address?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -132,10 +153,24 @@ const Contact = () => {
           <button
             type='submit'
             disabled={loading}
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary disabled:cursor-not-allowed disabled:opacity-60'
           >
             {loading ? "Sending..." : "Send"}
           </button>
+
+          {submissionStatus.message && (
+            <p
+              role='status'
+              aria-live='polite'
+              className={`text-[14px] ${
+                submissionStatus.type === "success"
+                  ? "text-emerald-400"
+                  : "text-red-400"
+              }`}
+            >
+              {submissionStatus.message}
+            </p>
+          )}
         </form>
       </motion.div>
 

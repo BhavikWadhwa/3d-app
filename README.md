@@ -111,15 +111,11 @@ Open the local URL printed by Vite, usually `http://localhost:5173`.
 
 ## Contact Form Configuration
 
-Without additional configuration, the contact form opens the visitor's default email client. To send messages directly through EmailJS, create a `.env.local` file:
+The contact form sends submissions to `bhavikwadhwa1312@gmail.com` through FormSubmit's AJAX endpoint. The form includes a honeypot field, inline success/error feedback, and sets the sender's address as the reply-to address.
 
-```env
-VITE_APP_EMAILJS_SERVICE_ID=your_service_id
-VITE_APP_EMAILJS_TEMPLATE_ID=your_template_id
-VITE_APP_EMAILJS_PUBLIC_KEY=your_public_key
-```
+The first submission triggers a FormSubmit activation email. The recipient must click that activation link once before subsequent messages are forwarded to the inbox.
 
-Add the same variables to the Vercel project environment settings for production use. Never commit `.env.local` or private credentials.
+The default endpoint can optionally be replaced with a FormSubmit token or another compatible endpoint by setting `VITE_CONTACT_FORM_ENDPOINT` in the Vercel project environment settings.
 
 ## Deployment
 
